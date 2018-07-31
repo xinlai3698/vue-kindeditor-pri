@@ -2,9 +2,9 @@
   <div class="Hello">
     <h3>pages: Hello</h3>
     <div style="float:left;">
-      <editor id="editor_id02" height="500px" width="700px" :content.sync="editorText"
-            :afterChange="afterChange()"
+      <editor id="editor_id02" height="500px" width="700px" :content.sync="editorText" :afterChange="afterChange()"
             pluginsPath="/static/kindeditor/plugins/"
+            :items = "items"
             :loadStyleMode="false"
             @on-content-change="onContentChange"></editor>
     </div>
@@ -22,7 +22,8 @@ export default {
       // 双向同步的变量
       editorText: '直接初始化值',
       // content-change 事件回掉改变的对象
-      editorTextCopy: ''
+      editorTextCopy: '',
+      items : ['fontname', 'fontsize', '|', 'forecolor', 'hilitecolor']
     }
   },
   mounted () {

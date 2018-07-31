@@ -3724,12 +3724,12 @@ _extend(KEdit, KWidget, {
 		if(K.isRss===true){
 			self.div.css({"display":"none"});
 			// 字号的最大值
-			K.maxFontSize = K.config.rss_fontsize_max;
+			// K.maxFontSize = K.config.rss_fontsize_max;
 		}else{
 			// 字号的最大值
-			K.maxFontSize = K.config.text_fontsize_max;
+			// K.maxFontSize = K.config.text_fontsize_max;
 		}
-		K.minFontSize = K.config.fontsize_min;
+		// K.minFontSize = K.config.fontsize_min;
 
 		self.designMode = _undef(options.designMode, true);
 		self.beforeGetHtml = options.beforeGetHtml;
@@ -5534,7 +5534,7 @@ KEditor.prototype = {
 function _editor(options) {
 	return new KEditor(options);
 }
-_instances = [];
+var _instances = [];
 function _create(expr, options) {
 	// 复杂媒体的语言类型
 	_complexMediaLangType = options.langType;
@@ -5546,7 +5546,7 @@ function _create(expr, options) {
 	// RSS隐藏输入框
 	K.isRss = options.isRss;
 	// 获取配置文件
-	K.config = options.config;
+	// K.config = options.config;
 	if (_undef(options.loadStyleMode, K.options.loadStyleMode)) {
 		var themeType = _undef(options.themeType, K.options.themeType);
 		_loadStyle(options.themesPath + 'default/default.css');

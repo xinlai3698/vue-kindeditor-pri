@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>无标题</title>
+</head>
+<body>
+<textarea id='richText'></textarea>
+<script src="kindeditor-all.js"></script>
+
+<script type="text/javascript">
+    //KindEditor脚本
+    var editor = KindEditor.create('#richText', {
+                        newlineTag: "br", //设置回车换行标签，可设置”p”、”br”。
+                        pasteType: 1, //设置粘贴烈性，0：禁止粘贴，1：纯文本，2：HTML粘贴
+                        langType: 'zh_CN', //指定语言，可设置”en”、”zh_CN”，需要引入lang/[langType].js。
+                        resizeType: 0, //2或1或0，2时可以拖动改变宽度和高度，1时只能改变高度，0时不能拖动。
+                        height: "100px", //编辑器的高度，只能设置px，比textarea输入框样式表高度优先度高。
+                        width: "100%", //编辑器的宽度，可以设置px或%，比textarea输入框样式表宽度优先度高。
+                        autoHeightMode: false, //在输入框中的内容行数较多时是否改变输入框的高度
+                    });
+</script>
+</body>
+</html>

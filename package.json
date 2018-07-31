@@ -1,8 +1,8 @@
 {
-  "name": "vue-kindeditor",
-  "version": "0.3.0",
+  "name": "vue-kindeditor-pri",
+  "version": "0.1.0",
   "description": "vue-kindeditor for Vue.js 2",
-  "author": "FF <ff755@outlook.com>",
+  "author": "xinlai3698@163.com",
   "main": "src/plugins/vue-kindeditor.js",
   "keywords": [
     "vue",

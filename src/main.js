@@ -2,11 +2,10 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import VueKindEditor from './plugins/vue-kindeditor'
-import 'kindeditor/kindeditor-all-min.js'
-import 'kindeditor/themes/default/default.css'
 import App from './App'
 import router from './router'
-
+require('@/kindeditor/kindeditor-all.js')
+require('@/kindeditor/themes/default/default.css')
 Vue.config.productionTip = false
 Vue.use(VueKindEditor)
 
