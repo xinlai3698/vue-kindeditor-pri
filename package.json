@@ -1,6 +1,6 @@
 {
   "name": "vue-kindeditor-pri",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "vue-kindeditor for Vue.js 2",
   "author": "xinlai3698@163.com",
   "main": "src/plugins/vue-kindeditor.js",
