@@ -95,7 +95,7 @@ export default {
     },
     langType: {
       type: String,
-      default: 'zh-CN'
+      default: 'zh_CN'
     },
     designMode: {
       type: Boolean,

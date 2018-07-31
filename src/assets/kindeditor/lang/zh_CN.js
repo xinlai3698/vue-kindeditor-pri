@@ -22,6 +22,10 @@ KindEditor.lang({
 	justifycenter : '居中',
 	justifyright : '右对齐',
 	justifyfull : '两端对齐',
+	verticaltop : '顶端对齐',
+	verticalmiddle : '垂直居中',
+	verticalbottom : '底端对齐',
+	letterspacing: '字间距',
 	insertorderedlist : '编号',
 	insertunorderedlist : '项目符号',
 	indent : '增加缩进',
@@ -207,24 +211,43 @@ KindEditor.lang({
 	},
 	'fontname.fontName' : {
 		'SimSun' : '宋体',
-		'NSimSun' : '新宋体',
-		'FangSong_GB2312' : '仿宋_GB2312',
-		'KaiTi_GB2312' : '楷体_GB2312',
-		'SimHei' : '黑体',
 		'Microsoft YaHei' : '微软雅黑',
+		'STXihei' : '华文细黑',
+		'KaiTi':'楷体',
+		'Helvetica':'Helvetica',//MAC最常用字体
 		'Arial' : 'Arial',
-		'Arial Black' : 'Arial Black',
-		'Times New Roman' : 'Times New Roman',
-		'Courier New' : 'Courier New',
-		'Tahoma' : 'Tahoma',
-		'Verdana' : 'Verdana'
+		'Lucida Family':'Lucida Family',//Mac OS UI的标准字体
+		'Verdana':'Verdana',//专门为了屏显而设计的字体
+		'Tahoma':'Tahoma',//曾经是Windows的标准字体，Mac 10.5之后默认也有安装
+		'Trebuchet MS':'Trebuchet MS',
+		'Georgia':'Georgia',//小字体显示也很清晰
+		'Times New Roman':'Times New Roman',//特点是可以在有限的空间塞进去更多的文字
+		'Wingdings2':'Wingdings2',//特殊字符
+		'Calibri':'Calibri'//为微软Microsoft Office 2007套装软件的默认字体
+		// 'Arial' : 'Arial',
+		// 'Arial Black' : 'Arial Black',
+		// 'Comic Sans MS' : 'Comic Sans MS',
+		// 'Courier New' : 'Courier New',
+		// 'Garamond' : 'Garamond',
+		// 'Georgia' : 'Georgia',
+		// 'Tahoma' : 'Tahoma',
+		// 'Times New Roman' : 'Times New Roman',
+		// 'Trebuchet MS' : 'Trebuchet MS',
+		// 'Verdana' : 'Verdana'
 	},
 	'lineheight.lineHeight' : [
-		{'1' : '单倍行距'},
-		{'1.5' : '1.5倍行距'},
-		{'2' : '2倍行距'},
-		{'2.5' : '2.5倍行距'},
-		{'3' : '3倍行距'}
+		// {'1' : '单倍行距'},
+		// {'1.5' : '1.5倍行距'},
+		// {'2' : '2倍行距'},
+		// {'2.5' : '2.5倍行距'},
+		// {'3' : '3倍行距'}
+		{'2px' : '2px'},
+		{'5px' : '5px'},
+		{'10px' : '10px'},
+		{'15px' : '15px'},
+		{'20px' : '20px'},
+		{'25px' : '25px'},
+		{'30px' : '30px'}
 	],
 	'template.selectTemplate' : '可选模板',
 	'template.replaceContent' : '替换当前内容',
@@ -233,6 +256,4 @@ KindEditor.lang({
 		'2.html' : '表格',
 		'3.html' : '项目编号'
 	}
-}, 'zh-CN');
-
-KindEditor.options.langType = 'zh-CN';
+}, 'zh_CN');

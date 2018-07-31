@@ -4,8 +4,9 @@ import Vue from 'vue'
 import VueKindEditor from './plugins/vue-kindeditor'
 import App from './App'
 import router from './router'
-require('@/kindeditor/kindeditor-all.js')
-require('@/kindeditor/themes/default/default.css')
+import $ from 'jquery'
+require('@/assets/kindeditor/kindeditor-all.js')
+require('@/assets/kindeditor/themes/default/default.css')
 Vue.config.productionTip = false
 Vue.use(VueKindEditor)
 

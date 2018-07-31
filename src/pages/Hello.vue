@@ -1,6 +1,5 @@
 <template>
   <div class="Hello">
-    <h3>pages: Hello</h3>
     <div style="float:left;">
       <editor id="editor_id02" height="500px" width="700px" :content.sync="editorText" :afterChange="afterChange()"
             pluginsPath="/static/kindeditor/plugins/"
@@ -23,7 +22,7 @@ export default {
       editorText: '直接初始化值',
       // content-change 事件回掉改变的对象
       editorTextCopy: '',
-      items : ['fontname', 'fontsize', '|', 'forecolor', 'hilitecolor']
+      items : ["fontname", "fontsize", "|", "forecolor", "hilitecolor", "|", "bold", "italic", "underline", "letterspacing", "lineheight", "|", "justifyleft", "justifycenter", "justifyright", "|", 'verticaltop', 'verticalmiddle', 'verticalbottom']
     }
   },
   mounted () {
@@ -39,7 +38,4 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
 
-</style>
