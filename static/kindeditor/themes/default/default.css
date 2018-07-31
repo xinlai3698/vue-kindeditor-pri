@@ -333,11 +333,11 @@
 	width: 16px;
 	height: 16px;
 }
-.ke-icon-lineheight {
+/*.ke-icon-lineheight {
 	background-position: 0px -992px;
 	width: 16px;
 	height: 16px;
-}
+}*/
 .ke-icon-clearhtml {
 	background-position: 0px -1008px;
 	width: 16px;
@@ -416,7 +416,7 @@
 /* container */
 .ke-container {
 	display: block;
-	border: 1px solid #CCCCCC;
+	/*border: 1px solid #CCCCCC;*/
 	background-color: #FFF;
 	overflow: hidden;
 	margin: 0;
@@ -424,8 +424,8 @@
 }
 /* toolbar */
 .ke-toolbar {
-	border-bottom: 1px solid #CCC;
-	background-color: #F0F0EE;
+	/*border-bottom: 1px solid #CCC;*/
+	/*background-color: #F0F0EE;*/
 	padding: 2px 5px;
 	text-align: left;
 	overflow: hidden;
@@ -443,7 +443,7 @@
 }
 .ke-toolbar .ke-outline {
 	border: 1px solid #F0F0EE;
-	margin: 1px;
+	margin: 5px;
 	padding: 1px 2px;
 	font-size: 0;
 	line-height: 0;
@@ -451,6 +451,33 @@
 	cursor: pointer;
 	display: block;
 	float: left;
+	margin-right: 7px;
+  margin-left: 0px;
+}
+.ke-icon-verticaltop {
+	background-image: url("align-upper.png");
+	width: 16px;
+	height: 16px;
+}
+.ke-icon-verticalmiddle {
+	background-image: url("align-middle.png");
+	width: 16px;
+	height: 16px;
+}
+.ke-icon-verticalbottom {
+	background-image: url("align-lower.png");
+	width: 16px;
+	height: 16px;
+}
+.ke-icon-letterspacing {
+	background-image: url("letter-spacing.png");
+	width: 16px;
+	height: 16px;
+}
+.ke-icon-lineheight {
+	background-image: url("line-height.png");
+	width: 16px;
+	height: 16px;
 }
 .ke-toolbar .ke-on {
 	border: 1px solid #5690D2;
@@ -464,7 +491,7 @@
 }
 .ke-toolbar .ke-separator {
 	height: 16px;
-	margin: 2px 3px;
+	margin: 6px 3px;
 	border-left: 1px solid #A0A0A0;
 	border-right: 1px solid #FFFFFF;
 	border-top:0;
@@ -475,6 +502,7 @@
 	overflow: hidden;
 	display: block;
 	float: left;
+	margin-right: 12px;
 }
 .ke-toolbar .ke-hr {
 	overflow: hidden;
@@ -491,6 +519,7 @@
 	margin: 0;
 	padding: 0;
 	overflow: auto;
+	border:1px solid #bbbbbb;
 }
 .ke-edit-textarea {
 	font: 12px/1.5 "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
@@ -512,6 +541,7 @@
 	overflow: hidden;
 	text-align: center;
 	cursor: s-resize;
+	display: none;
 }
 .ke-statusbar-center-icon {
 	background-position: -0px -754px;
@@ -862,13 +892,12 @@
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
-	*height: 25px;
 }
 .ke-upload-area .ke-upload-file {
 	position: absolute;
-	font-size: 60px;
 	top: 0;
 	right: 0;
+	height: 25px;
 	padding: 0;
 	margin: 0;
 	z-index: 811212;
@@ -1146,4 +1175,3 @@
 	width: 30%;
 	text-align: center;
 }
-
